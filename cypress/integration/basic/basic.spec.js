@@ -1,9 +1,9 @@
-/// <reference types='cypress'/>
+/// <reference types="cypress" />
 
-describe('Cypress Basics', () => {
+describe('Cypress basics', () => {
     it.only('Should visit a page and assert title', () => {
-        cy.visit('https://www.wcaquino.me/cypress/componentes.html')
-        
+        cy.visit('https://wcaquino.me/cypress/componentes.html')
+
         // const title = cy.title()
         // console.log(title)
 
@@ -14,7 +14,7 @@ describe('Cypress Basics', () => {
             .should('be.equal', 'Campo de Treinamento')
             .and('contain', 'Campo')
 
-            let syncTitle
+        let syncTitle
 
         cy.title().then(title => {
             console.log(title)
@@ -31,12 +31,12 @@ describe('Cypress Basics', () => {
         cy.get('#elementosForm\\:sugestoes').then($el => {
             cy.wrap($el).type(syncTitle)
         })
-
     })
 
     it('Should find and interact with an element', () => {
-        cy.visit('https://www.wcaquino.me/cypress/componentes.html')
-        
+        cy.visit('https://wcaquino.me/cypress/componentes.html')
+
+        // cy.get('nao existe')
         cy.get('#buttonSimple')
             .click()
             .should('have.value', 'Obrigado!')

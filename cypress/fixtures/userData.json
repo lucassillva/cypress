@@ -1,8 +1,8 @@
 {
-    "nome": "Lucas",
-    "sobrenome": "teste",
+    "nome": "Usuario",
+    "sobrenome": "Teste",
     "sexo": "M",
-    "comida": "carne",
+    "comida": "frango",
     "escolaridade": "Mestrado",
-    "esporte": "Corrida"
+    "esportes": "Corrida"
 }
